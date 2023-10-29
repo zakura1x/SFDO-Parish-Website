@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>IParish</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between font-roboto ">
+            <!-- Logo -->
+            <img src="images/logo.svg" alt="" class="w-16 h-16">
+
+            <!-- NavLinks -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-red-600">Home</a>
+                <a href="#" class="hover:text-red-600">About Us</a>
+                <a href="#" class="hover:text-red-600">News</a>
+                <a href="#" class="hover:text-red-600">Gallery</a>
+                <a href="#" class="hover:text-red-600">Parish Life</a>
+                <a href="#" class="hover:text-red-600">Event Calendar</a>
+            </div>
+
+            <!-- Button -->
+            <a href="" class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Donate</a>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="outline-none md:hidden">
+                <svg class="w-6 h-6 text-slate-700 hover:text-red-600 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+            </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <secion id="hero">
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:mt-36">
+            <!-- Left Item -->
+            <div class="flex flex-col space-y-4">
+                <h2 class="max-w-md text-4xl text-center font-bold font-ruda md:text-left md:text-5xl">
+                Welcome to St. John the Baptist Parish</h2>
+            </div>
+        </div>
+    </secion>
+    
+</body>
+</html>
