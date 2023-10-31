@@ -14,11 +14,15 @@ module.exports = {
         'lightRed': 'hsl(0, 44%, 64%)',
         'darkRed': 'hsl(0, 43%, 48%)',
         'red-news': 'hsl(0, 75%, 75%)',
+        'pinkish-red': 'hsl(0, 92%, 95%)',
+        'pinkishDarkRed': 'hsl(0, 75%, 75%)',
       },
       fontFamily:{
         'roboto': ['Roboto', 'sans-serif'],
         'ruda': ['Ruda', 'sans-serif'],
         'rosario': ['Rosario', 'sans-serif'],
+        'm-plus-code': ['M PLUS 1 Code', 'monospace'],
+        'marcellus': ['Marcellus SC', 'serif'],
       }
     },
   },
