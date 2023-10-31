@@ -68,7 +68,7 @@
     <!-- News and Announcements -->
     <section id="news-announcements">
         <!-- Header -->
-        <div class="border-4 border-transparent border-t-red-500 mt-12 shadow-xl">
+        <div class="border-4 border-transparent border-t-red-500 mt-12 shadow-xl px-2">
             <div class="container flex mx-auto mt-2 md:justify-center">
                 <h2 class="max-w-md text-3xl font-bold font-ruda text-center">News and Announcements</h2>
             </div>
@@ -77,25 +77,39 @@
         <!-- Flex Container -->
         <div class="container flex flex-col items-center mx-auto">
             <!-- Left Item -->
-            <div class="flex flex-col mt-6 px-4 items-center">
-                <!-- Mass Times -->
-                <div class="flex flex-col-reverse my-2 items-center md:flex-row">
-                    <!-- Mass Details 1-->
-                    <div class="p-2">
-                        <h3>Mass Times</h3>
-                        <ul>
-                            <li>SATURDAY: <span>5:30</span> PM</li>
-                            <li>SUNDAY: <span>5:30</span> PM</li>
-                            <li>MON-FRI: <span>5:30</span> PM</li>
-                            <li>MON-SAT: <span>5:30</span> PM</li>
+            <div class="flex flex-col mt-6 px-4 items-center font-ruda font-bold md:space-y-12">
+                <!-- Mass Details -->
+                <div class="flex flex-col-reverse items-center md:flex-row md:space-x-8">
+                    <div class="border-4 border-transparent border-t-red-news pl-12 pr-10 mt-6 py-8 rounded-xl shadow-xl md:mt-0">
+                        <h3 class="text-4xl">Mass Times</h3>
+                        <ul class="text-lg list-disc">
+                            <li>SATURDAY: <span class="font-rosario">5:30</span> PM</li>
+                            <li>SUNDAY: <span class="font-rosario">5:30</span> PM</li>
+                            <li>MON-FRI: <span class="font-rosario">5:30</span> PM</li>
+                            <li>MON-SAT: <span class="font-rosario">5:30</span> PM</li>
                         </ul>
                     </div>
                     <!-- Image -->
-                    <div>
+                    <div class="w-80 md-w1/2">
                         <img src="images/news-1.svg" alt="">
-                    </div>
+                    </div>     
                 </div>
                 <!-- Confession Times -->
+                <div class="flex flex-col items-center md:flex-row md:space-x-8">
+                    <!-- Image -->
+                    <div class="w-80 md-w1/2">
+                        <img src="images/news-1.svg" alt="">
+                    </div>
+                    <div class="border-4 border-transparent border-t-red-news pl-12 pr-10 mt-6 py-8 rounded-xl shadow-xl md:mt-0">
+                        <h3 class="text-4xl">Mass Times</h3>
+                        <ul class="text-lg list-disc">
+                            <li>SATURDAY: <span class="font-rosario">5:30</span> PM</li>
+                            <li>SUNDAY: <span class="font-rosario">5:30</span> PM</li>
+                            <li>MON-FRI: <span class="font-rosario">5:30</span> PM</li>
+                            <li>MON-SAT: <span class="font-rosario">5:30</span> PM</li>
+                        </ul>
+                    </div>     
+                </div>
             </div>
             <!-- Right Item -->
         </div>

@@ -13,10 +13,12 @@ module.exports = {
         'brightRedLight': 'hsl(12, 88%, 69%)',
         'lightRed': 'hsl(0, 44%, 64%)',
         'darkRed': 'hsl(0, 43%, 48%)',
+        'red-news': 'hsl(0, 75%, 75%)',
       },
       fontFamily:{
         'roboto': ['Roboto', 'sans-serif'],
         'ruda': ['Ruda', 'sans-serif'],
+        'rosario': ['Rosario', 'sans-serif'],
       }
     },
   },
