@@ -8,9 +8,6 @@
     <!-- Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>IParish</title>
-    <!-- // evo-calendar.css, followed by [theme-name].css (optional) -->
-    <link rel="stylesheet" type="text/css" href="css/evo-calendar.css"/>
-    <link rel="stylesheet" type="text/css" href="css/evo-calendar.midnight-blue.css"/>
 </head>
 <body>
     <!-- Navbar Section -->
@@ -191,20 +188,54 @@
         </div>
     </section>
 
-    <div id="calendar"></div>
+    <!-- Discover Who we Are -->
+    <section id="about-us" class="mt-6 lg:h-screen">
+        <!-- Header -->
+        <div class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">DISCOVER OUR PARISH LIFE</h2>
+        </div>
+        <!-- Flex Container -->
+        <div class="mx-auto flex flex-col lg:justify-center lg:flex-row p-6 md:p-12 lg:space-x-4 space-y-4">
+            <!-- Left Item -->
+            <div class="flex flex-col space-y-4 lg:ml-12 lg:w-2/3">
+                <!-- About Us -->
+                <div class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl space-y-4">
+                    <h3 class="font-roboto font-bold text-[30px]">About Us</h3>
+                    <p class="font-roboto">St. John The Baptist Parish, situated in San Fernando, Camarines Sur, is a vibrant and spirited Catholic community, deeply rooted in the rich tradition of Filipino spirituality. Named after the illustrious biblical figure, St. John The Baptist Parish serves as a testament to the steadfast faith and devotion of its parishioners.</p>
+                </div>
+                <!-- Contact Us -->
+                <div class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl space-y-4">
+                    <h3 class="font-roboto font-bold text-[30px]">Contact Us</h3>
+                    <p>Send us a message</p>
+                    <form>
+                        <div>
+                            <label for="name">Name</label> <br>
+                            <input type="text" name="name" class="w-full">
+                        </div>
+                        <div>
+                            <label for="name">Email</label> <br>
+                            <input type="email" name="email" class="w-full">
+                        </div>
+                        <div>
+                            <label for="name">Message:</label> <br>
+                            <textarea name="" cols="30" rows="10" class="w-full"></textarea>
+                        </div>
+                        <div class="mt-2 flex justify-center">
+                            <button class="bg-red-500 text-white p-2 px-4 hover:bg-red-500/75 w-1/2 md:w-1/4">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-        // evo-calendar.js, right after jQuery (required)
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="js/evo-calendar.js"></script>
-
-        <script>
-        // initialize your calendar, once the page's DOM is ready
-        $(document).ready(function() {
-            $('#calendar').evoCalendar({
-                settingName: settingValue
-            })
-        })
-        </script>
+            <!-- Right Item -->
+            <div class="mx-auto md:w-[88vw]">
+                <!-- GMaps Image -->
+                <div class="border-4 border-gray-400 lg:mt-24">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31028.893224027328!2d123.142144!3d13.5593984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a18bc2cdfddfd1%3A0xdad00e89c7281f4a!2sSan%20Fernando%20Parish%20Church!5e0!3m2!1sen!2sph!4v1699973451360!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[500px]"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>

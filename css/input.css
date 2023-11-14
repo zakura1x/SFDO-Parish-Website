@@ -5,30 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-  @-webkit-keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
+@layer base{
+  input, textarea{
+    padding: 6px;
+    padding-left: 12px;
+    margin: 0 2px 0 2px;
+    border-radius: 8px;
+    border: 1px solid #dee4e8;
   }
-  @keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
-  }
-
-  .slide-right {
-    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  textarea{
+    resize: none;
   }
 }

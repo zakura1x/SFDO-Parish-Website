@@ -436,6 +436,18 @@ video {
   display: none;
 }
 
+input, textarea{
+  padding: 6px;
+  padding-left: 12px;
+  margin: 0 2px 0 2px;
+  border-radius: 8px;
+  border: 1px solid #dee4e8;
+}
+
+textarea{
+  resize: none;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -552,9 +564,9 @@ video {
   }
 }
 
-@media (min-width: 976px){
+@media (min-width: 1025px){
   .container{
-    max-width: 976px;
+    max-width: 1025px;
   }
 }
 
@@ -568,14 +580,14 @@ video {
   position: relative;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mt-2{
@@ -618,6 +630,26 @@ video {
   height: 90vh;
 }
 
+.h-44{
+  height: 11rem;
+}
+
+.h-\[500px\]{
+  height: 500px;
+}
+
+.h-\[700px\]{
+  height: 700px;
+}
+
+.h-\[600px\]{
+  height: 600px;
+}
+
+.h-\[550px\]{
+  height: 550px;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -630,12 +662,16 @@ video {
   width: 1.5rem;
 }
 
+.w-\[90\%\]{
+  width: 90%;
+}
+
 .w-full{
   width: 100%;
 }
 
-.w-\[90\%\]{
-  width: 90%;
+.w-screen{
+  width: 100vw;
 }
 
 .max-w-md{
@@ -740,17 +776,41 @@ video {
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
-.border-red-news{
-  --tw-border-opacity: 1;
-  border-color: hsl(0 75% 75% / var(--tw-border-opacity));
+.border-red-500\/70{
+  border-color: rgb(239 68 68 / 0.7);
 }
 
 .border-transparent{
   border-color: transparent;
 }
 
-.border-red-500\/70{
-  border-color: rgb(239 68 68 / 0.7);
+.border-red-500\/10{
+  border-color: rgb(239 68 68 / 0.1);
+}
+
+.border-gray-950{
+  --tw-border-opacity: 1;
+  border-color: rgb(3 7 18 / var(--tw-border-opacity));
+}
+
+.border-gray-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.border-gray-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.border-gray-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .border-t-red-500{
@@ -942,16 +1002,6 @@ video {
   outline-offset: 2px;
 }
 
-@keyframes slide-right {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(100px);
-  }
-}
-
 .hover\:bg-brightRedLight:hover{
   --tw-bg-opacity: 1;
   background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
@@ -992,14 +1042,6 @@ video {
     margin-top: 0px;
   }
 
-  .md\:mt-36{
-    margin-top: 9rem;
-  }
-
-  .md\:ml-5{
-    margin-left: 1.25rem;
-  }
-
   .md\:mt-12{
     margin-top: 3rem;
   }
@@ -1036,8 +1078,24 @@ video {
     width: 600px;
   }
 
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:w-screen{
+    width: 100vw;
+  }
+
+  .md\:w-\[100vh\]{
+    width: 100vh;
+  }
+
+  .md\:w-\[90vh\]{
+    width: 90vh;
+  }
+
+  .md\:w-\[screen\]{
+    width: screen;
+  }
+
+  .md\:w-\[88vw\]{
+    width: 88vw;
   }
 
   .md\:flex-row{
@@ -1064,6 +1122,10 @@ video {
     margin-bottom: calc(3rem * var(--tw-space-y-reverse));
   }
 
+  .md\:p-12{
+    padding: 3rem;
+  }
+
   .md\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1079,13 +1141,53 @@ video {
   }
 }
 
-@media (min-width: 976px){
+@media (min-width: 1025px){
+  .lg\:ml-12{
+    margin-left: 3rem;
+  }
+
+  .lg\:mt-16{
+    margin-top: 4rem;
+  }
+
+  .lg\:mt-\[3rem\]{
+    margin-top: 3rem;
+  }
+
+  .lg\:mt-\[8rem\]{
+    margin-top: 8rem;
+  }
+
+  .lg\:mt-\[10rem\]{
+    margin-top: 10rem;
+  }
+
+  .lg\:mt-96{
+    margin-top: 24rem;
+  }
+
+  .lg\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-24{
+    margin-top: 6rem;
+  }
+
   .lg\:h-screen{
     height: 100vh;
   }
 
-  .lg\:w-\[600px\]{
-    width: 600px;
+  .lg\:w-1\/4{
+    width: 25%;
+  }
+
+  .lg\:w-screen{
+    width: 100vw;
+  }
+
+  .lg\:w-2\/3{
+    width: 66.666667%;
   }
 
   .lg\:grid-cols-2{
@@ -1096,8 +1198,17 @@ video {
     flex-direction: row;
   }
 
-  .lg\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
+  }
+
+  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
