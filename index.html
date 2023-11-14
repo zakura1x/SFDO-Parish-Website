@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>IParish</title>
 </head>
 <body>
@@ -46,7 +48,7 @@
     <!-- Hero Section -->
     <secion id="hero">
         <!-- Flex Container -->
-        <div class="h-[90vh] container flex flex-col-reverse items-center justify-center px-6 mx-auto space-y-0 md:flex-row md:justify-center">
+        <div data-aos="fade-right" class="h-[90vh] container flex flex-col-reverse items-center justify-center px-6 mx-auto space-y-0 md:flex-row md:justify-center">
             <!-- Left Item -->
             <div class="flex flex-col space-y-2 mt-4 md:mt-0">
                 <h2 class="max-w-md text-4xl text-center font-bold font-ruda md:text-left md:text-5xl">
@@ -162,6 +164,26 @@
                         <p class="text-center mt-4">6:30 PM <br> AT <br> ST.JOHN PARISH</p>
                     </div>
                 </div>       
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Parish Life -->
+    <section>
+        <div class="mt-4 md:h-screen">
+            <div class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+                <h2 class="text-center font-bold font-rosario text-[30px] ">DISCOVER OUR PARISH LIFE</h2>
+            </div>
+            <div class="mt-6 mx-auto grid md:grid-cols-2">
+                <div class="mx-auto">
+                    <img src="images/discover.png" alt="/" class="h-[400px]" />   
+                </div>
+                <div class="flex flex-col justify-center mt-4 p-4 shadow-xl border-t-4 border-red-500 space-y-2 md:w-[600px] md:px-12">
+                    <h3 class="font-ruda text-3xl">START LIVING LIFE</h3>
+                    <p class="font-roboto text-sm">In the picturesque town of San Fernando, a thriving community has embraced the importance of living a purposeful life. The townspeople, influenced by their rich religious faith, have dedicated themselves to nurturing their spiritual, intellectual, and emotional growth, ultimately transforming their community into a harmonious and flourishing haven.</p>
+                    <p class="font-roboto text-sm">The parishioners, steeped in the teachings of Jesus Christ and the Sacred Scriptures, have learned to cultivate gratitude, forgiveness, and unwavering faith in the face of adversity. This collective sense of spiritual fulfillment has served as the cornerstone for the community's unwavering resilience and enduring love for one another.</p>
+                    <button class="bg-red-500 text-white rounded-full p-2 px-4 hover:bg-red-500/75 w-1/2 md:w-1/4">See more...</button>
+                </div>    
             </div>
         </div>
     </section>
