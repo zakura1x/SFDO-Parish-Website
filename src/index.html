@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>IParish</title>
+    <!-- // evo-calendar.css, followed by [theme-name].css (optional) -->
+    <link rel="stylesheet" type="text/css" href="css/evo-calendar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/evo-calendar.midnight-blue.css"/>
 </head>
 <body>
     <!-- Navbar Section -->
@@ -15,7 +18,7 @@
         <!-- Flex Container -->
         <div class="flex items-center justify-between font-roboto ">
             <!-- Logo -->
-            <img src="images/logo.svg" alt="" class="w-16 h-16">
+            <img src="../images/logo.svg" alt="" class="w-16 h-16">
 
             <!-- NavLinks -->
             <div class="hidden md:flex space-x-6">
@@ -48,7 +51,7 @@
     <!-- Hero Section -->
     <secion id="hero">
         <!-- Flex Container -->
-        <div data-aos="fade-right" class="h-[90vh] container flex flex-col-reverse items-center justify-center px-6 mx-auto space-y-0 md:flex-row md:justify-center">
+        <div class="h-[90vh] container flex flex-col-reverse items-center justify-center px-6 mx-auto space-y-0 md:flex-row md:justify-center">
             <!-- Left Item -->
             <div class="flex flex-col space-y-2 mt-4 md:mt-0">
                 <h2 class="max-w-md text-4xl text-center font-bold font-ruda md:text-left md:text-5xl">
@@ -62,27 +65,27 @@
             </div>
             <!-- Right Item Picture -->
             <div class="rounded-lg overflow-hidden md:w-1/2 shadow-xl shadow-rose-500/30">
-                <img src="images/hero-picture.jpg" alt="" class="w-full">
+                <img src="../images/hero-picture.jpg" alt="" class="w-full">
             </div>
         </div>
     </secion>
 
     <!-- News and Announcements -->
-    <section id="news-announcements" class="md:h-screen">
+    <section id="news-announcements" class="lg:h-screen">
         <!-- Header -->
-        <div class="border-4 border-transparent border-t-red-500 shadow-xl">
+        <div class="border-t-4 border-transparent border-t-red-500 shadow-xl">
             <div class="container flex mx-auto mt-2 md:justify-center">
                 <h2 class="max-w-md text-3xl font-bold font-ruda text-center">News and Announcements</h2>
             </div>
         </div>
 
         <!-- Flex Container -->
-        <div class="container flex flex-col items-center justify-center mx-auto md:flex-row md:mt-36">
+        <div class="container flex flex-col items-center justify-center mx-auto lg:flex-row md:mt-12">
             <!-- Left Item -->
             <div class="flex flex-col mt-6 px-4 items-center font-ruda font-bold md:space-y-12">
                 <!-- Mass Details -->
                 <div class="flex flex-col-reverse items-center md:flex-row md:space-x-8">
-                    <div class="border-4 border-transparent border-t-red-news pl-12 pr-10 mt-6 py-8 rounded-xl shadow-xl md:mt-0">
+                    <div class="border-t-4 border-t-red-news pl-12 pr-10 mt-6 py-8 rounded-xl shadow-xl md:mt-0">
                         <h3 class="text-4xl">Mass Times</h3>
                         <ul class="text-lg list-disc pl-6">
                             <li>SATURDAY: <span class="font-rosario">5:30</span> PM</li>
@@ -93,16 +96,16 @@
                     </div>
                     <!-- Image -->
                     <div class="md:w-80">
-                        <img src="images/news-1.svg" alt="">
+                        <img src="../images/news-1.svg" alt="">
                     </div>     
                 </div>
                 <!-- Confession Times -->
                 <div class="flex flex-col items-center mt-6 md:flex-row md:space-x-8 md:mt-0">
                     <!-- Image -->
                     <div class="md:w-80">
-                        <img src="images/news-2.svg" alt="">
+                        <img src="../images/news-2.svg" alt="">
                     </div>
-                    <div class="border-4 border-transparent border-t-red-news pl-12 pr-10 mt-6 py-8 rounded-xl shadow-xl md:mt-0">
+                    <div class="border-t-4 border-t-red-news pl-12 pr-10 mt-6 py-8 rounded-xl shadow-xl md:mt-0">
                         <h3 class="text-4xl">Mass Times</h3>
                         <ul class="text-lg list-disc pl-6">
                             <li>SATURDAY: <span class="font-rosario">5:30</span> PM</li>
@@ -115,7 +118,7 @@
             </div>
 
             <!-- Right Item -->
-            <div class="flex flex-col bg-pinkish-red p-6 space-y-4 mt-4 border-4 border-red-news md:ml-6">
+            <div class="flex flex-col bg-pinkish-red p-6 space-y-4 mt-4 border-4 border-red-500/70 w-[90%] sm:w-max md:ml-6">
                 <!-- First Card -->
                 <div class="flex flex-row bg-white">
                     <!-- Schedule -->
@@ -169,16 +172,16 @@
     </section>
 
     <!-- Discover Parish Life -->
-    <section>
+    <section id="Discover">
         <div class="mt-4 md:h-screen">
             <div class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
                 <h2 class="text-center font-bold font-rosario text-[30px] ">DISCOVER OUR PARISH LIFE</h2>
             </div>
-            <div class="mt-6 mx-auto grid md:grid-cols-2">
+            <div class="mt-6 mx-auto grid lg:grid-cols-2 place-content-center">
                 <div class="mx-auto">
                     <img src="images/discover.png" alt="/" class="h-[400px]" />   
                 </div>
-                <div class="flex flex-col justify-center mt-4 p-4 shadow-xl border-t-4 border-red-500 space-y-2 md:w-[600px] md:px-12">
+                <div class="flex flex-col justify-center mx-2 mt-4 p-4 shadow-xl border-t-4 border-red-500 space-y-2 md:w-[600px] md:px-12">
                     <h3 class="font-ruda text-3xl">START LIVING LIFE</h3>
                     <p class="font-roboto text-sm">In the picturesque town of San Fernando, a thriving community has embraced the importance of living a purposeful life. The townspeople, influenced by their rich religious faith, have dedicated themselves to nurturing their spiritual, intellectual, and emotional growth, ultimately transforming their community into a harmonious and flourishing haven.</p>
                     <p class="font-roboto text-sm">The parishioners, steeped in the teachings of Jesus Christ and the Sacred Scriptures, have learned to cultivate gratitude, forgiveness, and unwavering faith in the face of adversity. This collective sense of spiritual fulfillment has served as the cornerstone for the community's unwavering resilience and enduring love for one another.</p>
@@ -187,6 +190,21 @@
             </div>
         </div>
     </section>
+
+    <div id="calendar"></div>
+
+        // evo-calendar.js, right after jQuery (required)
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/evo-calendar.js"></script>
+
+        <script>
+        // initialize your calendar, once the page's DOM is ready
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+                settingName: settingValue
+            })
+        })
+        </script>
     
 </body>
 </html>
