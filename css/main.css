@@ -580,6 +580,18 @@ textarea{
   position: relative;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
+.m-4{
+  margin: 1rem;
+}
+
+.m-6{
+  margin: 1.5rem;
+}
+
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -590,13 +602,26 @@ textarea{
   margin-right: auto;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.ml-16{
+  margin-left: 4rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
 }
 
 .mt-4{
@@ -607,32 +632,12 @@ textarea{
   margin-top: 1.5rem;
 }
 
-.ml-12{
-  margin-left: 3rem;
-}
-
-.ml-16{
-  margin-left: 4rem;
-}
-
-.ml-24{
-  margin-left: 6rem;
-}
-
-.ml-28{
-  margin-left: 7rem;
-}
-
-.ml-14{
-  margin-left: 3.5rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
-}
-
 .flex{
   display: flex;
+}
+
+.table{
+  display: table;
 }
 
 .grid{
@@ -663,10 +668,6 @@ textarea{
   height: 90vh;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-full{
   height: 100%;
 }
@@ -683,6 +684,10 @@ textarea{
   width: 1.5rem;
 }
 
+.w-\[300px\]{
+  width: 300px;
+}
+
 .w-\[90\%\]{
   width: 90%;
 }
@@ -691,24 +696,12 @@ textarea{
   width: 100%;
 }
 
-.w-24{
-  width: 6rem;
+.w-screen{
+  width: 100vw;
 }
 
-.w-\[70\%\]{
-  width: 70%;
-}
-
-.w-\[700px\]{
-  width: 700px;
-}
-
-.w-\[400px\]{
-  width: 400px;
-}
-
-.w-\[300px\]{
-  width: 300px;
+.w-1\/4{
+  width: 25%;
 }
 
 .max-w-md{
@@ -717,6 +710,10 @@ textarea{
 
 .max-w-sm{
   max-width: 24rem;
+}
+
+.resize{
+  resize: both;
 }
 
 .list-disc{
@@ -733,10 +730,6 @@ textarea{
 
 .flex-col-reverse{
   flex-direction: column-reverse;
-}
-
-.place-content-center{
-  place-content: center;
 }
 
 .place-items-center{
@@ -777,10 +770,6 @@ textarea{
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.self-center{
-  align-self: center;
 }
 
 .overflow-hidden{
@@ -930,10 +919,6 @@ textarea{
   padding-top: 0.625rem;
 }
 
-.pl-16{
-  padding-left: 4rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1025,6 +1010,10 @@ textarea{
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .hover\:bg-brightRedLight:hover{
@@ -1151,16 +1140,21 @@ textarea{
 }
 
 @media (min-width: 1025px){
+  .lg\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .lg\:ml-12{
     margin-left: 3rem;
   }
 
-  .lg\:mt-24{
-    margin-top: 6rem;
-  }
-
   .lg\:mt-0{
     margin-top: 0px;
+  }
+
+  .lg\:mt-24{
+    margin-top: 6rem;
   }
 
   .lg\:h-screen{
