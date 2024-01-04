@@ -580,14 +580,6 @@ textarea{
   position: relative;
 }
 
-.m-2{
-  margin: 0.5rem;
-}
-
-.m-4{
-  margin: 1rem;
-}
-
 .m-6{
   margin: 1.5rem;
 }
@@ -600,16 +592,6 @@ textarea{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-6{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .ml-16{
@@ -634,10 +616,6 @@ textarea{
 
 .flex{
   display: flex;
-}
-
-.table{
-  display: table;
 }
 
 .grid{
@@ -672,6 +650,10 @@ textarea{
   height: 100%;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -696,14 +678,6 @@ textarea{
   width: 100%;
 }
 
-.w-screen{
-  width: 100vw;
-}
-
-.w-1\/4{
-  width: 25%;
-}
-
 .max-w-md{
   max-width: 28rem;
 }
@@ -712,8 +686,8 @@ textarea{
   max-width: 24rem;
 }
 
-.resize{
-  resize: both;
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .list-disc{
@@ -1012,10 +986,6 @@ textarea{
   outline-offset: 2px;
 }
 
-.filter{
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .hover\:bg-brightRedLight:hover{
   --tw-bg-opacity: 1;
   background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
@@ -1181,5 +1151,17 @@ textarea{
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }

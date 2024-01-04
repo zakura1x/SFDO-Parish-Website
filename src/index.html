@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="../css/slider.css">
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- Animation CSS -->
@@ -73,10 +75,8 @@
     <!-- News and Announcements -->
     <section id="news-announcements" class="lg:h-screen">
         <!-- Header -->
-        <div class="border-t-4 border-transparent border-t-red-500 shadow-xl">
-            <div class="container flex mx-auto mt-2 md:justify-center">
-                <h2 class="max-w-md text-3xl font-bold font-ruda text-center">News and Announcements</h2>
-            </div>
+        <div class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">NEWS AND ANNOUNCEMENTS</h2>
         </div>
 
         <!-- Flex Container -->
@@ -171,6 +171,42 @@
         </div>
     </section>
 
+    <!-- Gallery -->
+    <section id="moments" class="lg:h-screen">
+        <!-- Header -->
+        <div class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
+            <h2 class="text-center font-bold font-rosario text-[30px] ">MOMENTS WE CHERISH TOGETHER</h2>
+        </div>
+
+        <section id="slider" class="h-screen flex items-center justify-center">
+            <input type="radio" name="slider" id="s1" />
+            <input type="radio" name="slider" id="s2" />
+            <input type="radio" name="slider" id="s3" checked />
+            <input type="radio" name="slider" id="s4" />
+            <input type="radio" name="slider" id="s5" />
+
+            <label for="s1" id="slide1">
+                <img src="../images/img1.jpg" height="100%" width="100%" />
+            </label>
+
+            <label for="s2" id="slide2">
+                <img src="../images/img2.jpg" height="100%" width="100%" />
+            </label>
+
+            <label for="s3" id="slide3">
+                <img src="../images/img3.jpg" height="100%" width="100%" />
+            </label>
+
+            <label for="s4" id="slide4">
+                <img src="../images/img4.jpg" height="100%" width="100%" />
+            </label>
+
+            <label for="s5" id="slide5">
+                <img src="../images/img5.jpg" height="100%" width="100%" />
+            </label>
+        </section>
+    </section>
+
     <!-- Discover Parish Life -->
     <section id="Discover" class="md:h-screen lg:mt-0 mt-4">
         <div class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
@@ -224,7 +260,7 @@
                             <textarea name="" cols="30" rows="10" class="w-full"></textarea>
                         </div>
                         <div class="mt-2 flex justify-center">
-                            <button class="bg-red-500 text-white p-2 px-4 hover:bg-red-500/75 w-1/2 md:w-1/4">Send</button>
+                            <input type="button" class="bg-red-500 text-white p-2 px-4 hover:bg-red-500/75 w-1/2 md:w-1/4 cursor-pointer" value="Send">
                         </div>
                     </form>
                 </div>
@@ -248,7 +284,17 @@
         </div>
 
         <!-- Financial Drive -->
-        <div class="flex flex-col justify-center items-center h-full mx-auto">
+        <div class="flex flex-col justify-center items-center h-full mx-auto lg:flex-row lg:space-x-4">
+            <div class="mt-24 border-t-4 border-black p-4 space-y-2 bg-white ">
+                <img src="../images/donation-pic.png" alt="#" class="w-[300px]">
+                <h3 class="font-roboto text-2xl text-center">Financial Drive</h3>
+                <div class="flex justify-center">
+                    <!-- Button -->
+                    <button class="rounded-lg bg-brightRed px-6 py-2 text-sm text-white hover:bg-brightRedLight ml-16">Donate Now</button>
+                    <!-- Share Button -->
+                    <a href="#"> <img src="../images/share-link.svg" alt="#" class="pl-12"> </a>
+                </div>
+            </div>
             <div class="mt-24 border-t-4 border-black p-4 space-y-2 bg-white ">
                 <img src="../images/donation-pic.png" alt="#" class="w-[300px]">
                 <h3 class="font-roboto text-2xl text-center">Financial Drive</h3>
@@ -260,6 +306,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Events and Calendar -->
