@@ -576,56 +576,24 @@ textarea{
   }
 }
 
-.absolute{
-  position: absolute;
-}
-
 .relative{
   position: relative;
-}
-
-.left-0{
-  left: 0px;
 }
 
 .left-\[50\%\]{
   left: 50%;
 }
 
-.top-0{
-  top: 0px;
-}
-
 .top-\[50\%\]{
   top: 50%;
 }
 
-.top-\[40\%\]{
-  top: 40%;
-}
-
-.left-\[30\%\]{
-  left: 30%;
-}
-
-.left-\[40\%\]{
-  left: 40%;
-}
-
-.top-\[35\%\]{
-  top: 35%;
-}
-
-.left-\[35\%\]{
-  left: 35%;
+.z-10{
+  z-index: 10;
 }
 
 .z-\[-1\]{
   z-index: -1;
-}
-
-.z-10{
-  z-index: 10;
 }
 
 .m-6{
@@ -640,6 +608,16 @@ textarea{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .ml-16{
@@ -662,34 +640,6 @@ textarea{
   margin-top: 1.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-80{
-  margin-top: 20rem;
-}
-
-.ml-60{
-  margin-left: 15rem;
-}
-
-.ml-40{
-  margin-left: 10rem;
-}
-
-.ml-20{
-  margin-left: 5rem;
-}
-
-.ml-10{
-  margin-left: 2.5rem;
-}
-
-.ml-14{
-  margin-left: 3.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -710,20 +660,12 @@ textarea{
   height: 1.5rem;
 }
 
-.h-\[220px\]{
-  height: 220px;
-}
-
-.h-\[400px\]{
-  height: 400px;
-}
-
 .h-\[500px\]{
   height: 500px;
 }
 
-.h-\[850\%\]{
-  height: 850%;
+.h-\[600px\]{
+  height: 600px;
 }
 
 .h-\[90vh\]{
@@ -738,8 +680,8 @@ textarea{
   height: 100vh;
 }
 
-.h-\[600px\]{
-  height: 600px;
+.h-\[90\%\]{
+  height: 90%;
 }
 
 .w-1\/2{
@@ -758,8 +700,8 @@ textarea{
   width: 300px;
 }
 
-.w-\[450px\]{
-  width: 450px;
+.w-\[400px\]{
+  width: 400px;
 }
 
 .w-\[90\%\]{
@@ -772,10 +714,6 @@ textarea{
 
 .w-screen{
   width: 100vw;
-}
-
-.w-\[400px\]{
-  width: 400px;
 }
 
 .max-w-md{
@@ -856,10 +794,6 @@ textarea{
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.justify-self-center{
-  justify-self: center;
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -872,12 +806,12 @@ textarea{
   border-radius: 0.5rem;
 }
 
-.rounded-xl{
-  border-radius: 0.75rem;
-}
-
 .rounded-md{
   border-radius: 0.375rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .border{
@@ -921,13 +855,14 @@ textarea{
   border-top-color: hsl(0 75% 75% / var(--tw-border-opacity));
 }
 
-.bg-\[rgba\(0\2c 0\2c 0\2c 0\.7\)\]{
-  background-color: rgba(0,0,0,0.7);
-}
-
 .bg-brightRed{
   --tw-bg-opacity: 1;
   background-color: hsl(0 93% 59% / var(--tw-bg-opacity));
+}
+
+.bg-green-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
 }
 
 .bg-pinkish-red{
@@ -950,14 +885,9 @@ textarea{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-green-400{
+.bg-\[\#2D2D2D\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
-.bg-green-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -974,26 +904,6 @@ textarea{
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-24{
-  padding: 6rem;
-}
-
-.p-\[0\.5rem\]{
-  padding: 0.5rem;
-}
-
-.p-8{
-  padding: 2rem;
-}
-
-.p-\[4rem\]{
-  padding: 4rem;
-}
-
-.p-1{
-  padding: 0.25rem;
 }
 
 .px-4{
@@ -1039,6 +949,10 @@ textarea{
 
 .pt-2\.5{
   padding-top: 0.625rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .text-center{
@@ -1139,6 +1053,11 @@ textarea{
   background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
 }
 
+.hover\:bg-green-400:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-red-500\/75:hover{
   background-color: rgb(239 68 68 / 0.75);
 }
@@ -1146,11 +1065,6 @@ textarea{
 .hover\:bg-slate-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-green-400:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .hover\:text-red-600:hover{
@@ -1280,28 +1194,12 @@ textarea{
     margin-top: 6rem;
   }
 
-  .lg\:h-\[720\%\]{
-    height: 720%;
-  }
-
   .lg\:h-screen{
     height: 100vh;
   }
 
   .lg\:w-2\/3{
     width: 66.666667%;
-  }
-
-  .lg\:w-0{
-    width: 0px;
-  }
-
-  .lg\:w-auto{
-    width: auto;
-  }
-
-  .lg\:w-1\/2{
-    width: 50%;
   }
 
   .lg\:w-\[27\%\]{

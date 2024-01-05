@@ -172,7 +172,7 @@
     </section>
 
     <!-- Gallery -->
-    <section id="gallery" class="lg:h-screen">
+    <section id="gallery" class="lg:h-screen mt-6">
         <!-- Header -->
         <div data-aos="zoom-in-up" data-aos-duration="1500" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
             <h2 class="text-center font-bold font-rosario text-[30px] ">MOMENTS WE CHERISH TOGETHER</h2>
@@ -208,15 +208,15 @@
     </section>
 
     <!-- Discover Parish Life -->
-    <section id="parishlife" class="md:h-screen lg:mt-0 mt-4">
+    <section id="parishlife" class="lg:mt-0 mt-4">
         <div data-aos="zoom-in-up" data-aos-duration="1500" class="p-4 py-2 border-t-4 border-t-red-500 shadow-xl">
             <h2 class="text-center font-bold font-rosario text-[30px] ">DISCOVER OUR PARISH LIFE</h2>
         </div>
         <div data-aos="fade-right" data-aos-duration="1000" class="flex justify-center items-center h-full">
             <div class="mt-6 mx-auto grid lg:grid-cols-2 place-items-center">
-                <div class="mx-auto">
-                    <img src="/images/discover.png" alt="/" class="h-[600px] w-[400px]" />   
-                </div>
+                <div class="md:w-80">
+                    <img src="/images/discover.png" alt="">
+                </div> 
                 <div data-aos="fade-left" class="flex flex-col justify-center mx-2 mt-4 p-4 shadow-xl border-t-4 border-red-500 space-y-2 md:w-[600px] md:px-12">
                     <h3 class="font-ruda text-3xl">START LIVING LIFE</h3>
                     <p class="font-roboto text-sm">In the picturesque town of San Fernando, a thriving community has embraced the importance of living a purposeful life. The townspeople, influenced by their rich religious faith, have dedicated themselves to nurturing their spiritual, intellectual, and emotional growth, ultimately transforming their community into a harmonious and flourishing haven.</p>
@@ -299,24 +299,67 @@
                 <h3 class="font-roboto text-2xl text-center">Financial Drive</h3>
                 <div class="flex justify-center">
                     <!-- Button -->
-                    <button class="rounded-lg bg-brightRed px-6 py-2 text-sm text-white hover:bg-brightRedLight ml-16">Donate Now</button>
-                    <!-- Share Button -->
-                    <a href="#"> <img src="../images/share-link.svg" alt="#" class="pl-12"> </a>
-                </div>
-            </div>
-            <div class="mt-24 border-t-4 border-black p-4 space-y-2 bg-white ">
-                <img src="../images/donation-pic.png" alt="#" class="w-[300px]">
-                <h3 class="font-roboto text-2xl text-center">Financial Drive</h3>
-                <div class="flex justify-center">
-                    <!-- Button -->
-                    <button class="rounded-lg bg-brightRed px-6 py-2 text-sm text-white hover:bg-brightRedLight ml-16">Donate Now</button>
+                    <button class="open-payment rounded-lg bg-brightRed px-6 py-2 text-sm text-white hover:bg-brightRedLight ml-16">Donate Now</button>
                     <!-- Share Button -->
                     <a href="#"> <img src="../images/share-link.svg" alt="#" class="pl-12"> </a>
                 </div>
             </div>
         </div>
-
     </section>
+
+    <dialog class="dmodal w-full lg:w-[27%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-md z-10" id="dmodal">
+        <div class="flex flex-col justify-center space-y-4 rounded-lg overflow-hidden">
+            <div class="bg-[#2D2D2D] text-white font-roboto w-full">
+                <h2 class="pl-4 font-bold text-2xl ">SUPPORT THE PARISH FOR OTHERS</h2>
+                <p class="pl-4 text-lg">Leave a one-time donation</p>
+            </div>
+            <div class="font-roboto">
+                <form method="dmodal" class="px-4">
+                    <div>
+                        <label for="name">Full Name</label> <br>
+                        <input type="text" id="name" name="name" class="w-full" required placeholder="e.g Jose Rizal">
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label> <br>
+                        <input type="email" id="email" name="email" class="w-full" required placeholder="e.g jose.rizal@example.com">
+                    </div>
+                    <div>
+                        <label for="names">I’m donating in the name of:</label> <br>
+                        <input type="name" id="names" name="names" class="w-full" required placeholder="e.g Jose Rizal">
+                    </div>
+                    <div>
+                        <label for="organization">Organization/Honoree name:</label> <br>
+                        <input type="name" id="organization" name="organization" class="w-full" required placeholder="e.g UNC">
+                    </div>
+                    <div>
+                        <label for="amount">Amount</label> <br>
+                        <input type="number" id="amount" name="names" class="w-full" required placeholder="P">
+                    </div>
+                    <div>
+                        <label for="Message">Remarks/Reference Number</label> <br>
+                        <textarea name="Message" id="Message" cols="10" rows="2" class="w-full" required></textarea>
+                    </div>
+                    <div>
+                        <p>GCASH:<span class="font-bold">09X-XXXX-XXXX</span></p>
+                        <p>BDO:<span class="font-bold">123 4574</span></p>
+                        <p>BPI:<span class="font-bold">552 152</span></p>
+                    </div>
+                    <div class="mt-2 flex justify-center">
+                        <input type="button" class="close-payment rounded-md bg-[#2D2D2D] text-white p-2 px-4 hover:bg-green-400 my-2 cursor-pointer" value="Confirm Donation">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Payment -->
+    <dialog class="payment w-screen lg:w-[27%] p-2 lg:p-[0.5rem] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-md z-10" id="payment">
+        <div class="flex flex-col items-center justify-center space-y-4">
+            <h2 class="text-4xl font-bold font-roboto">Success!</h2>
+            <p class="text-center font-roboto">We’ve received your payment request. We would check our system for your Donation. Thank you so much!</p>
+        <button class="payment-close rounded-md bg-green-800 text-white p-2 px-4 hover:bg-green-400 w-1/2 md:w-1/4 cursor-pointer">Continue</button>
+        </div>
+    </dialog>
 
     <!-- Events and Calendar -->
     <section id="calendarevents" class="mt-6 lg:h-screen">
