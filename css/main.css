@@ -576,6 +576,10 @@ textarea{
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -608,11 +612,6 @@ textarea{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .my-2{
@@ -664,10 +663,6 @@ textarea{
   height: 500px;
 }
 
-.h-\[600px\]{
-  height: 600px;
-}
-
 .h-\[90vh\]{
   height: 90vh;
 }
@@ -680,8 +675,28 @@ textarea{
   height: 100vh;
 }
 
-.h-\[90\%\]{
-  height: 90%;
+.h-\[70vh\]{
+  height: 70vh;
+}
+
+.h-\[16px\]{
+  height: 16px;
+}
+
+.h-\[40px\]{
+  height: 40px;
+}
+
+.h-\[60px\]{
+  height: 60px;
+}
+
+.h-\[70px\]{
+  height: 70px;
+}
+
+.h-\[80px\]{
+  height: 80px;
 }
 
 .w-1\/2{
@@ -698,10 +713,6 @@ textarea{
 
 .w-\[300px\]{
   width: 300px;
-}
-
-.w-\[400px\]{
-  width: 400px;
 }
 
 .w-\[90\%\]{
@@ -855,6 +866,11 @@ textarea{
   border-top-color: hsl(0 75% 75% / var(--tw-border-opacity));
 }
 
+.bg-\[\#2D2D2D\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
+}
+
 .bg-brightRed{
   --tw-bg-opacity: 1;
   background-color: hsl(0 93% 59% / var(--tw-bg-opacity));
@@ -885,9 +901,8 @@ textarea{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#2D2D2D\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
+.bg-footer-background{
+  background-image: url(../images/lastpart.png);
 }
 
 .p-2{
@@ -935,6 +950,10 @@ textarea{
   padding-left: 3rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .pl-6{
   padding-left: 1.5rem;
 }
@@ -951,8 +970,20 @@ textarea{
   padding-top: 0.625rem;
 }
 
-.pl-4{
-  padding-left: 1rem;
+.pl-8{
+  padding-left: 2rem;
+}
+
+.pr-6{
+  padding-right: 1.5rem;
+}
+
+.pr-8{
+  padding-right: 2rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-center{
@@ -1107,10 +1138,6 @@ textarea{
 
   .md\:hidden{
     display: none;
-  }
-
-  .md\:h-screen{
-    height: 100vh;
   }
 
   .md\:w-1\/2{

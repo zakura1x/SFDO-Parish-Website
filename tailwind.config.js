@@ -8,6 +8,9 @@ module.exports = {
       xl: '1440px'
     },
     extend: {
+      backgroundImage:{
+        'footer-background': 'url(../images/lastpart.png)',
+      },
       colors:{
         'brightRed': 'hsl(0, 93%, 59%)',
         'brightRedLight': 'hsl(12, 88%, 69%)',
